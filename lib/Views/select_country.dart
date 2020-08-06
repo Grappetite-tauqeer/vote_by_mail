@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:dropdown_search/dropdown_search.dart';
 import 'package:vote_by_mail/Config/config.dart';
-
+import 'package:dropdown_search/dropdown_search.dart';
+import 'about_us.dart';
+import 'detail_view.dart';
 class SelectCounty extends StatefulWidget {
   @override
   _SelectCountyState createState() => _SelectCountyState();
@@ -34,6 +35,8 @@ class _SelectCountyState extends State<SelectCounty> {
                       child: Center(
                         child: GestureDetector(
                           onTap: (){
+
+                            MutualActions.goToView(AboutUs(), context);
 
                           },
                           child: Icon(
@@ -68,48 +71,81 @@ class _SelectCountyState extends State<SelectCounty> {
 
                     Expanded(
                       flex: 2,
-                      child: Container(
-                        child: SpacedRow(
-                          currentWidget: FlatButton(
-                            onPressed: (){
+                      child: CustomSpacedRow(
+                        currentWidget: FlatButton(
+                          child: Container(
 
-                            },
-                            child: Container(
+                            decoration: BoxDecoration(
                               color: Colors.white,
-                              child: Row(
-                                children: <Widget>[
-                                  Expanded(
-                                    flex: 20,
-                                    child: Container(
-                                      child: Text(
-                                        'Select your county',
-                                        textAlign: TextAlign.center,
-                                        style: TextStyle(
-                                          fontSize: 18,
-                                          fontWeight: FontWeight.w400
-                                        ),
-                                      ),
+                              border: Border.all(
+                                  color: Colors.white  , width: 2),
+                              borderRadius: BorderRadius.all(
+                                  Radius.circular(5.0) //                 <--- border radius here
+                              ),
+                                boxShadow: [BoxShadow(blurRadius: 10,color: Colors.black,offset: Offset(1,3))]// make rounded corner of border
 
+                              //
+                            ),
+                            child: DropdownSearch<String>(
+                              dropDownButton: SizedBox(
+                                height: double.infinity,
+                                width: double.infinity,
+                                child: Icon(
+                                  Icons.arrow_drop_down,
+                                  color: Colors.grey,
+                                ),
+                              ),
+
+                              popupBarrierColor: Colors.black.withAlpha(70),
+                              showSelectedItem: true,
+                              showClearButton: true,
+                              mode: Mode.BOTTOM_SHEET,
+                              maxHeight: 500,
+                              items: MutualActions.countiesList,
+                              label: "Search your county",
+                              onChanged: (valueSelected){
+
+                                DetailView detailView = DetailView(countySelected: valueSelected,);
+
+                                MutualActions.goToView(detailView, context);
+
+                              },
+                              showSearchBox: true,
+                              searchBoxDecoration: InputDecoration(
+                                border: OutlineInputBorder(),
+                                contentPadding: EdgeInsets.fromLTRB(12, 12, 8, 0),
+                                labelText: "Search your county",
+                              ),
+                              popupTitle: Container(
+
+                                height: 50,
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.only(
+                                    topLeft: Radius.circular(20),
+                                    topRight: Radius.circular(20),
+                                  ),
+                                ),
+                                child: Center(
+                                  child: Text(
+                                    'County',
+                                    style: TextStyle(
+                                      fontSize: 24,
+                                      fontWeight: FontWeight.bold,
+                                      color: Colors.red,
                                     ),
                                   ),
-                                  Expanded(
-                                    flex: 4,
-                                    child: Container(
-                                      color: Colors.grey,
-                                      child: SizedBox(
-                                        height: double.infinity,
-                                        child: Icon(
-                                          Icons.arrow_drop_down,
-                                          color: Colors.white,
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                ],
+                                ),
+                              ),
+                              popupShape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.only(
+                                  topLeft: Radius.circular(24),
+                                  topRight: Radius.circular(24),
+                                ),
                               ),
                             ),
                           ),
                         ),
+                        ratio: 1,
                       ),
                     ),
                   ],

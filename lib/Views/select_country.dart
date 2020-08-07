@@ -120,18 +120,23 @@ class _SelectCountyState extends State<SelectCounty> {
 
                                 height: 50,
                                 decoration: BoxDecoration(
+                                color: MutualActions.mainBlueColor,
                                   borderRadius: BorderRadius.only(
                                     topLeft: Radius.circular(20),
                                     topRight: Radius.circular(20),
                                   ),
                                 ),
-                                child: Center(
-                                  child: Text(
-                                    'County',
-                                    style: TextStyle(
-                                      fontSize: 24,
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.red,
+                                child: Container(
+                                  //color: Colors.blueAccent,
+
+                                  child: Center(
+                                    child: Text(
+                                      'Counties',
+                                      style: TextStyle(
+                                        fontSize: 24,
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.white,
+                                      ),
                                     ),
                                   ),
                                 ),
@@ -163,6 +168,7 @@ class _SelectCountyState extends State<SelectCounty> {
 
                         color: Color.fromRGBO(27, 38, 81, 10),
                         onPressed: (){
+                        MutualActions.openLink('https://www.google.com/');
 
                         },
                         child: Text(

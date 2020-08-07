@@ -4,6 +4,7 @@ import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:beauty_textfield/beauty_textfield.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 
 String validateEmail(String value) {
@@ -95,6 +96,16 @@ TyperAnimatedTextKit typeWriter = TyperAnimatedTextKit(
 
 class MutualActions {
 
+
+
+  static openLink(String url) async {
+
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
 
   static Color mainOrangeColor = Color.fromRGBO(234, 122, 48, 1.0);
   static Color mainBlueColor = Color.fromRGBO(29, 40, 87, 1.0);

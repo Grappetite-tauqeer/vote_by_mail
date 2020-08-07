@@ -52,13 +52,20 @@ class DetailView extends StatelessWidget {
                 child: Container(
                   color: MutualActions.redColor,
 
-                  child: Center(
-                    child: Text(
-                      'Explore' ,
-                      style: TextStyle(
-                        color: Colors.white ,
-                        fontWeight: FontWeight.w500,
-                        fontSize: 20
+                  child: FlatButton(
+                    onPressed: (){
+
+                      MutualActions.openLink(this.currentCounty.link);
+
+                    },
+                    child: Center(
+                      child: Text(
+                        'Explore' ,
+                        style: TextStyle(
+                          color: Colors.white ,
+                          fontWeight: FontWeight.w500,
+                          fontSize: 20
+                        ),
                       ),
                     ),
                   ),

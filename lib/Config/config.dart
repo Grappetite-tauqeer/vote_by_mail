@@ -1,9 +1,5 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:flutter_spinkit/flutter_spinkit.dart';
-import 'package:animated_text_kit/animated_text_kit.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:beauty_textfield/beauty_textfield.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 
@@ -73,25 +69,6 @@ TextStyle appBarStyle = TextStyle(
 );
 
 
-
-const spinner = SpinKitRotatingCircle(
-  color: Colors.red,
-  size: 50.0,
-);
-
-
-TyperAnimatedTextKit typeWriter = TyperAnimatedTextKit(
-  text: [
-    "Civil Academy",
-  ],
-  textStyle: loaderTitle,
-  textAlign: TextAlign.start,
-  alignment: AlignmentDirectional.topStart,
-  isRepeatingAnimation: false,
-  speed: Duration(
-      milliseconds: 150
-  ),// or Alignment.topLeft
-);
 
 
 class MutualActions {
@@ -289,57 +266,6 @@ class SpacedRowWitIcon extends StatelessWidget {
   }
 }
 
-
-class MyTextField extends StatefulWidget {
-
-  MyTextField({this.placeHolderName,this.mainIcon,this.textInputType,this.textChangedFunction,this.isFocused});
-
-  final String placeHolderName;
-  final IconData mainIcon;
-  final Function textChangedFunction;
-  final TextInputType textInputType;
-  final bool isFocused;
-
-  @override
-  _MyTextFieldState createState() => _MyTextFieldState();
-}
-
-class _MyTextFieldState extends State<MyTextField> {
-
-
-
-  @override
-  Widget build(BuildContext context) {
-    return SpacedRow(
-      currentWidget: BeautyTextfield(
-        autofocus: true,
-        accentColor: Colors.grey,
-        backgroundColor: Colors.white,
-        width: double.maxFinite,
-
-        height: 60,
-        duration: Duration(milliseconds: 300),
-        inputType: this.widget.textInputType,
-        prefixIcon: Icon(
-          this.widget.mainIcon,
-          color: Colors.blueAccent,
-        ),
-        placeholder: this.widget.placeHolderName,
-        onTap: () {
-          print('Click');
-          FocusScope.of(context).requestFocus(new FocusNode());
-
-
-        },
-        onChanged: this.widget.textChangedFunction,
-        onSubmitted: (data) {
-          print(data.length);
-        },
-      ) ,
-
-    );
-  }
-}
 
 
 

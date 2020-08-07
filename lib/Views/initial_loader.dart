@@ -19,7 +19,7 @@ class _InitialLoaderState extends State<InitialLoader> with TickerProviderStateM
     super.initState();
 
     _arrowAnimationController =
-        AnimationController(vsync: this, duration: Duration(milliseconds: 300));
+        AnimationController(vsync: this, duration: Duration(seconds: 300));
     _arrowAnimation =
         Tween(begin: 0.0, end: pi).animate(_arrowAnimationController);
 
@@ -39,7 +39,7 @@ class _InitialLoaderState extends State<InitialLoader> with TickerProviderStateM
 
     _heartAnimationController.forward();
 
-    Future.delayed(const Duration(seconds: 1), () {
+    Future.delayed(const Duration(seconds: 3), () {
       MutualActions.goToView(SelectCounty(), context);
     });
 

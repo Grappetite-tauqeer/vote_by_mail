@@ -20,15 +20,17 @@
 	<string>????</string>
 	<key>CFBundleVersion</key>
 	<string>$(CURRENT_PROJECT_VERSION)</string>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSCameraUsageDescription</key>
 	<string>For your pofile</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
 	<string>For your pofile</string>
-	<key>NSPhotoLibraryUsageDescription </key>
-	<string>For your pofile</string>
 	<key>NSPhotoLibraryUsageDescription</key>
+	<string>For your pofile</string>
+	<key>NSPhotoLibraryUsageDescription </key>
 	<string>For your pofile</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>

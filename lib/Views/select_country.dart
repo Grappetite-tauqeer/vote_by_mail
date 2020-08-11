@@ -98,16 +98,23 @@ class _SelectCountyState extends State<SelectCounty> {
 
                               popupBarrierColor: Colors.black.withAlpha(70),
                               showSelectedItem: true,
-                              showClearButton: true,
+                              showClearButton: false,
                               mode: Mode.BOTTOM_SHEET,
                               maxHeight: 500,
                               items: MutualActions.countiesList,
                               label: "Search your county",
                               onChanged: (valueSelected){
 
-                                DetailView detailView = DetailView(countySelected: valueSelected,);
+                                if(valueSelected.length == 0) {
 
-                                MutualActions.goToView(detailView, context);
+                                }
+                                else {
+                                  DetailView detailView = DetailView(countySelected: valueSelected,);
+
+                                  MutualActions.goToView(detailView, context);
+
+                                }
+
 
                               },
                               showSearchBox: true,

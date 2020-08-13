@@ -66,28 +66,38 @@ class AboutUs extends StatelessWidget {
       'When is the last date to apply to vote by mail?',
       '1',
       <Entry>[
-        Entry('Info 1 Detail','',),
+        Entry('Fri. Oct 23 is the last day to request a vote by mail ballot online to be mailed out to you.','',),
       ],
     ),
     Entry(
-      'What date dos a mail ballot need to be mailed by?',
+      'What is the last day to register to vote?',
       '2',
       <Entry>[
-        Entry('Info 2 Detail',''),
+        Entry('''Mon. Oct.5 is the last day for Voter Registration in this election cycle for 2020.''',''),
+      ],
+    ),
+
+    Entry(
+      'What date does a mail ballot need to be mailed by?',
+      '3',
+      <Entry>[
+        Entry('''Around Sept. 27th. Mailed ballots need arrive by election day.  It is recommended to send the ballot at least one week before election day.
+
+Tue. Nov. 3rd is the last day to return a vote by mail ballot IN-PERSON at a your local precinct or a Supervisor of Elections office by 7pm.''',''),
       ],
     ),
     Entry(
       'What are ways to submit a ‘mail’ ballot?',
-      '3',
+      '4',
       <Entry>[
-        Entry('Info 3 Detail',''),
+        Entry('''Mail ballots can be mailed through the postal service or dropped off at secure drop boxes made available by the Supervisor of Elections.  Search for your county's Supervisor of Elections website to find these locations.''',''),
       ],
     ),
     Entry(
       'Why vote by mail?',
-      '4',
+      '5',
       <Entry>[
-        Entry('Info 4 Detail',''),
+        Entry('''In uncertain times Voting by Mail is a safe and secure way to make sure your ballot is cast.  Voting by Mail is not dependent on precincts being open or upon an individual's availability to vote on Nov 3.  There is also more time available to consider candidates and/or amendment proposals.''',''),
       ],
     ),
 

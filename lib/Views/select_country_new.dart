@@ -157,7 +157,7 @@ class _SelectCountyNewState extends State<SelectCountyNew> {
                   mode: Mode.BOTTOM_SHEET,
                   maxHeight: 500,
                   items: MutualActions.countiesList,
-                  label: "Search your county",
+                  label: "Find your county",
                   onChanged: (valueSelected){
 
                     if(valueSelected.length == 0) {
@@ -176,7 +176,7 @@ class _SelectCountyNewState extends State<SelectCountyNew> {
                   searchBoxDecoration: InputDecoration(
                     border: OutlineInputBorder(),
                     contentPadding: EdgeInsets.fromLTRB(12, 12, 8, 0),
-                    labelText: "Search your county",
+                    labelText: "Find your county",
                   ),
                   popupTitle: Container(
 

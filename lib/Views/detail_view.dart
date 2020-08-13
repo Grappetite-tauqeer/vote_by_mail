@@ -2,10 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:vote_by_mail/Config/config.dart';
 import 'package:vote_by_mail/Model/county.dart';
 import 'county_listing.dart';
-import 'package:flutter_email_sender/flutter_email_sender.dart';
 import 'dart:async';
 import 'dart:io';
-
+//import 'package:flutter_appavailability/flutter_appavailability.dart';
+import 'package:mailto/mailto.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class DetailView extends StatefulWidget {
 
@@ -25,6 +26,13 @@ class _DetailViewState extends State<DetailView> {
     if(this.currentCounty.email.length == 0) {
       return;
     }
+
+    //mailto:your.email@gmail.com
+    final mailtoLink = Mailto(
+        to: [this.currentCounty.email]
+    );
+
+    await launch('$mailtoLink');
 
 
 
@@ -82,12 +90,13 @@ class _DetailViewState extends State<DetailView> {
                           ),
                           GestureDetector(
                             onTap: (){
+                        this.openEmail();
 
                             },
                             child: Text(
 
                               this.currentCounty.email,
-                              style: normalTextStyle,
+                              style: normalTextStyleWithUnderline,
                             ),
                           ),
                           Text(

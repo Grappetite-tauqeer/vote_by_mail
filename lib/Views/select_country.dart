@@ -3,6 +3,7 @@ import 'package:vote_by_mail/Config/config.dart';
 import 'package:dropdown_search/dropdown_search.dart';
 import 'about_us.dart';
 import 'detail_view.dart';
+
 class SelectCounty extends StatefulWidget {
   @override
   _SelectCountyState createState() => _SelectCountyState();
@@ -76,12 +77,12 @@ class _SelectCountyState extends State<SelectCounty> {
                           child: Container(
 
                             decoration: BoxDecoration(
-                              color: Colors.white,
-                              border: Border.all(
-                                  color: Colors.white  , width: 2),
-                              borderRadius: BorderRadius.all(
-                                  Radius.circular(5.0) //                 <--- border radius here
-                              ),
+                                color: Colors.white,
+                                border: Border.all(
+                                    color: Colors.white  , width: 2),
+                                borderRadius: BorderRadius.all(
+                                    Radius.circular(5.0) //                 <--- border radius here
+                                ),
                                 boxShadow: [BoxShadow(blurRadius: 10,color: Colors.black,offset: Offset(1,3))]// make rounded corner of border
 
                               //
@@ -127,7 +128,7 @@ class _SelectCountyState extends State<SelectCounty> {
 
                                 height: 50,
                                 decoration: BoxDecoration(
-                                color: MutualActions.mainBlueColor,
+                                  color: MutualActions.mainBlueColor,
                                   borderRadius: BorderRadius.only(
                                     topLeft: Radius.circular(20),
                                     topRight: Radius.circular(20),
@@ -175,7 +176,7 @@ class _SelectCountyState extends State<SelectCounty> {
 
                         color: Color.fromRGBO(27, 38, 81, 10),
                         onPressed: (){
-                        MutualActions.openLink('https://www.google.com/');
+
 
                         },
                         child: Text(

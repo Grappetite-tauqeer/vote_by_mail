@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'dart:math';
 import 'select_country.dart';
+import 'select_country_new.dart';
 import 'package:vote_by_mail/Config/config.dart';
 
 class InitialLoader extends StatefulWidget {
@@ -39,8 +40,8 @@ class _InitialLoaderState extends State<InitialLoader> with TickerProviderStateM
 
     _heartAnimationController.forward();
 
-    Future.delayed(const Duration(seconds: 3), () {
-      MutualActions.goToView(SelectCounty(), context);
+    Future.delayed(const Duration(seconds: 1), () {
+      MutualActions.goToView(SelectCountyNew(), context);
     });
 
   }

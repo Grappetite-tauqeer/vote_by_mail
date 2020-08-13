@@ -33,6 +33,11 @@ TextStyle normalTextStyle = TextStyle( fontFamily: defaultFontName,
   fontSize: 16,
 );
 
+TextStyle normalTextStyleWithUnderline = TextStyle( fontFamily: defaultFontName,
+  fontSize: 16,
+    decoration: TextDecoration.underline
+);
+
 TextStyle mediumTextStyle = TextStyle( fontFamily: defaultFontName,
   fontSize: 16,
   fontWeight: FontWeight.w500,
@@ -77,11 +82,15 @@ class MutualActions {
 
   static openLink(String url) async {
 
+
+
     if (await canLaunch(url)) {
       await launch(url);
     } else {
       throw 'Could not launch $url';
     }
+
+
   }
 
   static Color mainOrangeColor = Color.fromRGBO(234, 122, 48, 1.0);

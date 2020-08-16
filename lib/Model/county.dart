@@ -150,7 +150,7 @@ class County {
     'Sarasota':'rturner@sarasotavotes.com',
     'Seminole':'Elections@VoteSeminole.org',
     'St. Johns':'Email: voakes@votesjc.com',
-    'St Lucie':'elections@slcelections.com',
+    'St Lucie': '''elections@slcelections.com''',
     'Sumter':'bill.keen@sumterelections.org',
     'Suwannee':'gwilliams@suwanneevotes.com',
     'Taylor':'taylorelections@gtcom.net',
@@ -207,7 +207,11 @@ class County {
     'Nassau':'https://www.votenassau.com',
     'Okaloosa':'https://www.govote-okaloosa.com',
     'Okeechobee':'https://www.voteokeechobee.com',
-    'Orange':'https://www.ocfelections.com',
+    'Orange':
+    '''https://www.ocfelections.com
+
+A few  FL counties have created barriers to block direct requests for a ballot so you may have to answer a few questions before you’re allowed to request your vote by mail ballot. Look for 'Proceed' when you land to begin your vote by mail request.
+    ''',
     'Osceola':'https://www.voteosceola.com',
     'Palm Beach':'https://www.pbcelections.org',
     'Pasco':'https://www.pascovotes.com',
@@ -215,10 +219,15 @@ class County {
     'Polk':'https://www.polkelections.com',
     'Putnam':'https://soe.putnam-fl.com',
     'Santa Rosa':'https://www.votesantarosa.com',
-    'Sarasota':'https://www.sarasotavotes.com',
+    'Sarasota':'''https://www.sarasotavotes.com
+    
+A few  FL counties have created barriers to block direct requests for a ballot so you may have to answer a few questions before you’re allowed to request your vote by mail ballot. Look for 'Proceed' when you land to begin your vote by mail request.
+  ''',
     'Seminole':'http://voteseminole.org',
     'St. Johns':'https://www.votesjc.com',
-    'St Lucie':'https://www.slcelections.com',
+    'St Lucie':'''https://www.slcelections.com
+        
+A few  FL counties have created barriers to block direct requests for a ballot so you may have to answer a few questions before you’re allowed to request your vote by mail ballot. Look for 'Proceed' when you land to begin your vote by mail request.''',
     'Sumter':'https://www.sumterelections.org',
     'Suwannee':'https://www.suwanneevotes.com',
     'Taylor':'https://www.taylorelections.com',
@@ -460,7 +469,8 @@ There were no towns in Jackson County when it was formed. The first county court
 There were no towns in Jackson County when it was formed. The first county court met at what was called "Robinson's Big Spring" (later called Blue Springs) in 1822 and then at the "Big Spring of the Choctawhatchee" in 1823. The following year the county court met at "Chipola Settlement", which is also known as Waddell's Mill Pond.''',
     'Okeechobee': '''Jackson County was created by the Florida Territorial Council in 1822 out of Escambia County, at the same time that Duval County was organized from land of St. Johns County, making them the third and fourth counties in the Territory. The county was named for Andrew Jackson, a General of the War of 1812, who had served as Florida's first military governor for six months in 1821.[4] Jackson County originally extended from the Choctawhatchee River on the west to the Suwannee River on the east. By 1840 the county had been reduced close to its present boundaries through the creation of new counties from its original territory, following an increase of population in these areas. Minor adjustments to the county boundaries continued through most of the 19th century, however.
 There were no towns in Jackson County when it was formed. The first county court met at what was called "Robinson's Big Spring" (later called Blue Springs) in 1822 and then at the "Big Spring of the Choctawhatchee" in 1823. The following year the county court met at "Chipola Settlement", which is also known as Waddell's Mill Pond.''',
-    'Orange': '''Jackson County was created by the Florida Territorial Council in 1822 out of Escambia County, at the same time that Duval County was organized from land of St. Johns County, making them the third and fourth counties in the Territory. The county was named for Andrew Jackson, a General of the War of 1812, who had served as Florida's first military governor for six months in 1821.[4] Jackson County originally extended from the Choctawhatchee River on the west to the Suwannee River on the east. By 1840 the county had been reduced close to its present boundaries through the creation of new counties from its original territory, following an increase of population in these areas. Minor adjustments to the county boundaries continued through most of the 19th century, however.
+    'Orange':
+    '''Jackson County was created by the Florida Territorial Council in 1822 out of Escambia County, at the same time that Duval County was organized from land of St. Johns County, making them the third and fourth counties in the Territory. The county was named for Andrew Jackson, a General of the War of 1812, who had served as Florida's first military governor for six months in 1821.[4] Jackson County originally extended from the Choctawhatchee River on the west to the Suwannee River on the east. By 1840 the county had been reduced close to its present boundaries through the creation of new counties from its original territory, following an increase of population in these areas. Minor adjustments to the county boundaries continued through most of the 19th century, however.
 There were no towns in Jackson County when it was formed. The first county court met at what was called "Robinson's Big Spring" (later called Blue Springs) in 1822 and then at the "Big Spring of the Choctawhatchee" in 1823. The following year the county court met at "Chipola Settlement", which is also known as Waddell's Mill Pond.''',
     'Osceola': '''Jackson County was created by the Florida Territorial Council in 1822 out of Escambia County, at the same time that Duval County was organized from land of St. Johns County, making them the third and fourth counties in the Territory. The county was named for Andrew Jackson, a General of the War of 1812, who had served as Florida's first military governor for six months in 1821.[4] Jackson County originally extended from the Choctawhatchee River on the west to the Suwannee River on the east. By 1840 the county had been reduced close to its present boundaries through the creation of new counties from its original territory, following an increase of population in these areas. Minor adjustments to the county boundaries continued through most of the 19th century, however.
 There were no towns in Jackson County when it was formed. The first county court met at what was called "Robinson's Big Spring" (later called Blue Springs) in 1822 and then at the "Big Spring of the Choctawhatchee" in 1823. The following year the county court met at "Chipola Settlement", which is also known as Waddell's Mill Pond.''',

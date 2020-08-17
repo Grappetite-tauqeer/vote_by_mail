@@ -100,6 +100,15 @@ Tue. Nov. 3rd is the last day to return a vote by mail ballot IN-PERSON at a you
         Entry('''In uncertain times Voting by Mail is a safe and secure way to make sure your ballot is cast.  Voting by Mail is not dependent on precincts being open or upon an individual's availability to vote on Nov 3.  There is also more time available to consider candidates and/or amendment proposals.''',''),
       ],
     ),
+    Entry(
+      'Why we built this app?',
+      '5',
+      <Entry>[
+        Entry('''To combat the spread of COVID-19 in  a nationally held super-infectious event of a presidential election and prevent voter suppression's undermining tactics through education and accessibility of the Vote-By-Mail option. 
+
+This app is dedicated to the loving memory and triumphant life of "The Boy from Troy."  "Never, ever be afraid to make some noise and get in good trouble, necessary trouble. - John Lewis (February 21, 1940 – July 17, 2020) Politician and Civil-Rights Leader who served in the United States House of Representatives.''',''),
+      ],
+    ),
 
     /*Entry(
   'Chapter A',

@@ -123,11 +123,19 @@ class MutualActions {
 
   static List<String> countiesList =
   ['Alachua',
-  'Baker','Bay','Bradford','Brevard','Broward','Calhoun','Charlotte','Citrus','Clay','Collier',
+  'Baker',
+    'Bay',
+    'Bradford',
+    'Brevard',
+    'Broward',
+    'Calhoun',
+    'Charlotte',
+    'Citrus',
+    'Clay','Collier',
   'Columbia','DeSoto','Dixie','Duval','Escambia','Flagler','Franklin','Gadsden','Gilchrist',
   'Glades','Gulf','Hamilton','Hardee','Hendry','Hernando','Highlands',
   'Hillsborough','Holmes','Indian River',
-  'Jackson','Jefferson','Lafayette','Lake','Lee','Levy','Liberty','Madison','Manatee'
+  'Jackson','Jefferson','Lafayette','Lake','Lee','Leon','Levy','Liberty','Madison','Manatee'
   ,'Marion','Martin','Miami-Dade','Monroe','Nassau',
   'Okaloosa','Okeechobee','Orange','Osceola','Palm Beach','Pasco','Pinellas'
   ,'Polk','Putnam','Santa Rosa','Sarasota','Seminole','St. Johns','St Lucie','Sumter',

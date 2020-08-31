@@ -26,6 +26,10 @@
 	<true/>
 	<key>NSCameraUsageDescription</key>
 	<string>For your pofile</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>You need to enable Location Services to find your county.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>You need to enable Location Services to find your county.</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
 	<string>For your pofile</string>
 	<key>NSPhotoLibraryUsageDescription</key>

@@ -66,6 +66,13 @@ TextStyle boldTextStyle = TextStyle( fontFamily: defaultFontName,
   fontWeight: FontWeight.bold,
 );
 
+TextStyle boldTextStyleDown = TextStyle( fontFamily: defaultFontName,
+  fontSize: 18,
+  fontWeight: FontWeight.bold,
+  color: Colors.white,
+    decoration: TextDecoration.none
+);
+
 TextStyle appBarStyle = TextStyle(
   fontFamily: defaultFontName,
   fontSize: 18,

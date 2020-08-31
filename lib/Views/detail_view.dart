@@ -7,6 +7,8 @@ import 'dart:io';
 //import 'package:flutter_appavailability/flutter_appavailability.dart';
 import 'package:mailto/mailto.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:async_loader/async_loader.dart';
+
 
 class DetailView extends StatefulWidget {
 

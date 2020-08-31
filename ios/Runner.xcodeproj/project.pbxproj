@@ -365,7 +365,7 @@
 				CODE_SIGN_IDENTITY = "Apple Distribution: Grappetite BV (CDGRA7E2B7)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Distribution: Grappetite BV (CDGRA7E2B7)";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = CDGRA7E2B7;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -507,7 +507,7 @@
 				CODE_SIGN_IDENTITY = "Apple Distribution: Grappetite BV (CDGRA7E2B7)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Distribution: Grappetite BV (CDGRA7E2B7)";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = CDGRA7E2B7;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -543,7 +543,7 @@
 				CODE_SIGN_IDENTITY = "Apple Distribution: Grappetite BV (CDGRA7E2B7)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Distribution: Grappetite BV (CDGRA7E2B7)";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = CDGRA7E2B7;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (

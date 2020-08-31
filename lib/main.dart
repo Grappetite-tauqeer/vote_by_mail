@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:vote_by_mail/Views/initial_loader.dart';
 import 'package:vote_by_mail/Views/county_listing.dart';
 import 'package:vote_by_mail/Config/config.dart';
+import 'package:async_loader/async_loader.dart';
 
 void main() {
   runApp(MyApp());
@@ -14,7 +15,6 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'The Vote App',
-
       theme: ThemeData(
 
         fontFamily: defaultFontName,
